@@ -1,0 +1,25 @@
+//fonts
+
+@font-face {
+	font-family: myFont;
+	font-weight: normal;
+	src: url('../assets/font.ttc') format('TTC'),
+		url('../assets/font.ttf') format('truetype');
+}
+
+.App {
+	font-family: myFont, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+}
+
+// ///////////////////////
+
+.App {
+	background-color: #ffdac9;
+}
