@@ -1,0 +1,153 @@
+.community {
+	background-color: #fff;
+	height: 100vh;
+	padding: 0 8rem;
+	position: relative;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	height: 100%;
+	//main pannel
+	.title-pannel {
+		display: flex;
+		all: unset;
+		position: absolute;
+		left: 32rem;
+		top: 4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 200px;
+		z-index: 5;
+		.title {
+			position: relative;
+			height: min-content;
+			z-index: 0;
+			width: 30ch;
+			margin-bottom: 6rem;
+			h1 {
+				position: absolute;
+				font-size: 3rem;
+				line-height: 2.4rem;
+
+				z-index: 3;
+			}
+			div {
+				position: absolute;
+				top: 3rem;
+				left: -1rem;
+				height: 4px;
+				width: 120%;
+				background-color: var(--primary);
+				opacity: 0.8;
+				z-index: 1;
+			}
+		}
+		.subtitle {
+			background-color: red;
+			width: 50px;
+			background-color: var(--primary);
+
+			h3 {
+				white-space: nowrap;
+				overflow: hidden;
+			}
+		}
+
+		p {
+			width: 20ch;
+			text-transform: uppercase;
+		}
+	}
+	//grid of pannels
+	.grid {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 240px;
+		gap: 20px;
+		padding-top: 20px;
+		.grid-item.empty {
+			display: flex;
+			padding: 2rem 2rem;
+
+			p {
+				width: 30ch;
+				font-weight: 400;
+				font-family: Lato, sans-serif;
+			}
+		}
+		.grid-item {
+			width: 100%;
+			height: 100%;
+
+			display: flex;
+			gap: 20px;
+			background-color: transparent;
+			.item-left {
+				background-color: #fff;
+				flex: 0.6;
+				position: relative;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0 0 30px 3px rgba(255, 218, 201, 0.3);
+				.icon {
+					width: 40px;
+					height: 40px;
+					background-color: var(--primary);
+					position: absolute;
+					right: 0;
+					top: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					img {
+						object-fit: cover;
+						width: 60%;
+						height: 60%;
+					}
+				}
+
+				img {
+					object-fit: cover;
+					width: 90%;
+					height: 90%;
+				}
+			}
+			.item-right {
+				flex: 0.4;
+				background-color: #fff;
+				box-shadow: 0 0 30px 3px rgba(255, 218, 201, 0.3);
+				padding: 2rem 2rem 3rem;
+				position: relative;
+				h4 {
+					text-transform: lowercase;
+					font-size: 1.4rem;
+				}
+				p {
+					font-family: Lato, sans-serif;
+					font-weight: 400;
+				}
+				.socials {
+					position: absolute;
+					right: 2rem;
+					bottom: 0rem;
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					.social {
+						align-items: center;
+						display: flex;
+						gap: 0.3rem;
+						p {
+							font-weight: 700;
+						}
+						img {
+							height: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

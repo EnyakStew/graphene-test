@@ -10,7 +10,7 @@ function App() {
 			<Header />
 			<Hero />
 			<Community />
-			<Menu />
+			{/* <Menu /> */}
 		</div>
 	);
 }

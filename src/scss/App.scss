@@ -1,3 +1,6 @@
+@import './community', './header', './hero', './menu';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
 //fonts
 
 @font-face {
@@ -7,19 +10,29 @@
 		url('../assets/font.ttf') format('truetype');
 }
 
+:root {
+	--primary: #ffdac9;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .App {
 	font-family: myFont, sans-serif;
+	color: #333333;
 }
 
 h1,
 h2,
 h3,
 h4 {
+	all: unset;
 	text-transform: uppercase;
 }
 
 // ///////////////////////
-
-.App {
+body {
 	background-color: #ffdac9;
 }
