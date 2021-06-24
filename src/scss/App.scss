@@ -22,6 +22,8 @@ body {
 .App {
 	font-family: myFont, sans-serif;
 	color: #333333;
+	scroll-snap-type: y mandatory;
+	overflow: scroll;
 }
 
 h1,
