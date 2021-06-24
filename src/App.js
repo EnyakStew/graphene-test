@@ -1,5 +1,5 @@
 import './scss/App.scss';
-import { useRef,useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Community from './components/Community';
@@ -10,7 +10,9 @@ function App() {
 		<div className="App">
 			<Header />
 			<Hero />
+
 			<Community />
+
 			{/* <Menu /> */}
 		</div>
 	);

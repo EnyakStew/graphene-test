@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { controller, scene } from 'react-scrollmagic';
 import Tacos from '../assets/tacos.png';
 import Waffles from '../assets/waffles.png';
 import Chocos from '../assets/chocos.png';
