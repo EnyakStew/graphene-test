@@ -33,7 +33,7 @@ const Menu = () => {
 		gsap.fromTo(
 			column2.current,
 			{
-				y: -300,
+				y: -1000,
 			},
 			{
 				y: 0,
@@ -66,7 +66,7 @@ const Menu = () => {
 		gsap.fromTo(
 			column4.current,
 			{
-				y: -300,
+				y: -1000,
 			},
 			{
 				y: 0,
