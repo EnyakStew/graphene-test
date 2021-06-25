@@ -1,5 +1,4 @@
-import { useRef, useEffect } from 'react';
-import { controller, scene } from 'react-scrollmagic';
+import { useRef, useEffect, useState } from 'react';
 import Tacos from '../assets/tacos.png';
 import Waffles from '../assets/waffles.png';
 import Chocos from '../assets/chocos.png';
@@ -8,8 +7,11 @@ import Bubble from '../assets/bubble.png';
 import Heart from '../assets/heart.png';
 
 const Community = () => {
+	const section = useRef(null);
+	const [windowTop, setWindowTop] = useState(window.scrollY);
+
 	return (
-		<div className="community">
+		<div className="community" ref={section}>
 			<div className="title-pannel">
 				<div className="title">
 					<h1>MEET OUR COMMUNITY</h1>
@@ -33,8 +35,8 @@ const Community = () => {
 					<div className="item-right">
 						<h4>@buzzfeedfood</h4>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-							itaque.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+							voluptatum?
 						</p>
 						<div className="socials">
 							<div className="social">
@@ -57,8 +59,7 @@ const Community = () => {
 					<div className="item-right">
 						<h4>@buzzfeedfood</h4>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum incidunt
-							quos sequi minus reprehenderit.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, saepe!
 						</p>
 						<div className="socials">
 							<div className="social">
@@ -89,8 +90,8 @@ const Community = () => {
 					<div className="item-right">
 						<h4>@buzzfeedfood</h4>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quisquam!
-							Dolorum, vitae ipsam? Error itaque blanditiis eaque fuga doloremque aut!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+							dolores.
 						</p>
 						<div className="socials">
 							<div className="social">

@@ -1,18 +1,18 @@
 .community {
 	background-color: #fff;
-	height: 100vh;
 	padding: 0 8rem;
 	position: relative;
 	padding-top: 6rem;
 	padding-bottom: 6rem;
 	height: 100%;
+	overflow: hidden;
 	scroll-snap-align: start;
 	//main pannel
 	.title-pannel {
 		display: flex;
 		all: unset;
 		position: absolute;
-		left: 32rem;
+		left: 41%;
 		top: 4rem;
 		display: flex;
 		flex-direction: column;
@@ -63,7 +63,8 @@
 	.grid {
 		display: grid;
 		grid-template-columns: 50% 50%;
-		grid-template-rows: 240px;
+		grid-template-rows: 1fr;
+		justify-content: space-between;
 		gap: 20px;
 		padding-top: 20px;
 		.grid-item.empty {
@@ -79,10 +80,11 @@
 		.grid-item {
 			width: 100%;
 			height: 100%;
-
+			max-height: 240px;
 			display: flex;
 			gap: 20px;
 			background-color: transparent;
+
 			.item-left {
 				background-color: #fff;
 				flex: 0.6;
@@ -151,4 +153,26 @@
 			}
 		}
 	}
+}
+
+//slide animation
+
+.item-1 {
+	position: relative;
+	transform: translateY(400px);
+	transition: 0.7s ease-in-out;
+}
+.item-2 {
+	transform: translateY(400px);
+	transition: 0.7s ease-in-out 0.3s;
+}
+.item-3 {
+	transform: translateY(400px);
+	transition: 0.7s ease-in-out 0.6s;
+}
+
+.item-1.slide-in,
+.item-2.slide-in,
+.item-3.slide-in {
+	transform: translateY(0);
 }
