@@ -17,7 +17,7 @@ const Menu = () => {
 		gsap.fromTo(
 			column1.current,
 			{
-				y: 100,
+				y: 300,
 			},
 			{
 				y: 0,
@@ -29,13 +29,61 @@ const Menu = () => {
 				},
 			}
 		);
-		//
+		//2nd
+		gsap.fromTo(
+			column2.current,
+			{
+				y: -300,
+			},
+			{
+				y: 0,
+				scrollTrigger: {
+					trigger: section.current,
+					start: 'top center',
+					end: 'center center',
+					scrub: true,
+				},
+			}
+		);
+
+		//3rd
+		gsap.fromTo(
+			column3.current,
+			{
+				y: 300,
+			},
+			{
+				y: 0,
+				scrollTrigger: {
+					trigger: section.current,
+					start: 'top center',
+					end: 'center center',
+					scrub: true,
+				},
+			}
+		);
+		//4th
+		gsap.fromTo(
+			column4.current,
+			{
+				y: -300,
+			},
+			{
+				y: 0,
+				scrollTrigger: {
+					trigger: section.current,
+					start: 'top center',
+					end: 'center center',
+					scrub: true,
+				},
+			}
+		);
 	}, []);
 
 	return (
 		<div className="menu" ref={section}>
 			<div className="grid">
-				<div className="grid-column" ref={column1}>
+				<div className="grid-column col-1" ref={column1}>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
 						accusamus sit quos in similique quam ab. Accusamus eveniet exercitationem
@@ -43,7 +91,7 @@ const Menu = () => {
 						id vero ipsam in nisi corrupti, quis dolores vel, magnam ea mollitia!
 					</p>
 				</div>
-				<div className="grid-column" ref={column2}>
+				<div className="grid-column col-2" ref={column2}>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
 						accusamus sit quos in similique quam ab. Accusamus eveniet exercitationem
@@ -51,7 +99,7 @@ const Menu = () => {
 						id vero ipsam in nisi corrupti, quis dolores vel, magnam ea mollitia!
 					</p>
 				</div>
-				<div className="grid-column" ref={column3}>
+				<div className="grid-column col-3" ref={column3}>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
 						accusamus sit quos in similique quam ab. Accusamus eveniet exercitationem
@@ -59,7 +107,7 @@ const Menu = () => {
 						id vero ipsam in nisi corrupti, quis dolores vel, magnam ea mollitia!
 					</p>
 				</div>
-				<div className="grid-column" ref={column4}>
+				<div className="grid-column col-4" ref={column4}>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
 						accusamus sit quos in similique quam ab. Accusamus eveniet exercitationem

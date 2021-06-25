@@ -1,8 +1,9 @@
 .menu {
 	height: 100vh;
 	scroll-snap-align: start;
-	padding-top: 4rem;
+	padding-top: 2rem;
 	background-color: #f8f8f8;
+	overflow: hidden;
 	.grid {
 		height: 100%;
 		display: grid;
