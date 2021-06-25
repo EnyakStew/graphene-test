@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef } from 'react';
 import Tacos from '../assets/tacos.png';
 import Waffles from '../assets/waffles.png';
 import Chocos from '../assets/chocos.png';
@@ -8,7 +8,6 @@ import Heart from '../assets/heart.png';
 
 const Community = () => {
 	const section = useRef(null);
-	const [windowTop, setWindowTop] = useState(window.scrollY);
 
 	return (
 		<div className="community" ref={section}>

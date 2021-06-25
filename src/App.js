@@ -1,5 +1,4 @@
 import './scss/App.scss';
-import { useRef, useEffect } from 'react';
 import ReactScrollDetect, { DetectSection } from 'react-scroll-detect';
 import Header from './components/Header';
 import Hero from './components/Hero';
