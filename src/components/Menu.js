@@ -83,37 +83,91 @@ const Menu = () => {
 	return (
 		<div className="menu" ref={section}>
 			<div className="grid">
-				<div className="grid-column col-1" ref={column1}>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
-						accusamus sit quos in similique quam ab. Accusamus eveniet exercitationem
-						distinctio, deleniti praesentium cumque laboriosam doloribus rem assumenda
-						id vero ipsam in nisi corrupti, quis dolores vel, magnam ea mollitia!
-					</p>
+				<div className="title">
+					<div className="title-text">
+						<h1>OUR MENU</h1>
+						<div></div>
+					</div>
+					<button>KNOW MORE</button>
 				</div>
-				<div className="grid-column col-2" ref={column2}>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
-						accusamus sit quos in similique quam ab. Accusamus eveniet exercitationem
-						distinctio, deleniti praesentium cumque laboriosam doloribus rem assumenda
-						id vero ipsam in nisi corrupti, quis dolores vel, magnam ea mollitia!
-					</p>
+				<div className="grid-column col-1">
+					<div className="grid-content" ref={column1}>
+						<h1 id="starters">STARTERS</h1>
+						<div className="menu-item">
+							<h2>QUINOA CROQUETAS</h2>
+							<p>
+								Quinoa and cheddar croquetas with aji ricotto & pineapple salsa (v)
+							</p>
+							<div className="price">£4.95</div>
+						</div>
+						<div className="menu-item">
+							<h2>CHIFFA CHICHARONES</h2>
+							<p>Slow cooked, crispy pork belly with soy sauce.</p>
+							<div className="price">£6.95</div>
+						</div>
+						<div className="menu-item">
+							<h2>CALAMARES</h2>
+							<p>Crispy baby squid with pickled japaleño miso salsa.</p>
+							<div className="price">£6.95</div>
+						</div>
+					</div>
 				</div>
-				<div className="grid-column col-3" ref={column3}>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
-						accusamus sit quos in similique quam ab. Accusamus eveniet exercitationem
-						distinctio, deleniti praesentium cumque laboriosam doloribus rem assumenda
-						id vero ipsam in nisi corrupti, quis dolores vel, magnam ea mollitia!
-					</p>
+				<div className="grid-column col-1">
+					<div className="grid-content" ref={column2}>
+						<h1 id="main">MAIN COURSES</h1>
+						<div className="menu-item">
+							<h2>EL CLASICO</h2>
+							<p>
+								Sea bass ceviche with aji limo tiger's milk,sweet potato purée, choclo
+								corn, red onion, coriander & plantain.
+							</p>
+							<div className="price">£8.95</div>
+						</div>
+						<div className="menu-item">
+							<h2>TRADITO CALLAO</h2>
+							<p>
+								Coria tiratido with coriander tiger's milk, black tobika, crème fraiche
+								& sweet potato crunchies.
+							</p>
+							<div className="price">£8.95</div>
+						</div>
+					</div>
 				</div>
-				<div className="grid-column col-4" ref={column4}>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero
-						accusamus sit quos in similique quam ab. Accusamus eveniet exercitationem
-						distinctio, deleniti praesentium cumque laboriosam doloribus rem assumenda
-						id vero ipsam in nisi corrupti, quis dolores vel, magnam ea mollitia!
-					</p>
+				<div className="grid-column col-1">
+					<div className="grid-content" ref={column3}>
+						<h1 id="sides">SIDES</h1>
+						<div className="menu-item">
+							<h2>SUPER POLLO</h2>
+							<p>Marinated corn fed chicken pieces with rocotto salsa.</p>
+							<div className="price">£4.95</div>
+						</div>
+
+						<div className="menu-item">
+							<h2>PATATAS FRITAS</h2>
+							<p>Sweet potato fries with aji rocotto mayonnaise</p>
+							<div className="price">£3.95</div>
+						</div>
+					</div>
+				</div>
+				<div className="grid-column col-1">
+					<div className="grid-content" ref={column4}>
+						<h1 id="desserts">DeSSERTS</h1>
+						<div className="menu-item">
+							<h2>ICE CREAM</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							<div className="price">£3.95</div>
+						</div>
+						<div className="menu-item">
+							<h2>TIRAMISU</h2>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+							<div className="price">£3.95</div>
+						</div>
+						<div className="menu-item">
+							<h2>CHOCOLATE BROWNIE</h2>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+							<div className="price">£3.95</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

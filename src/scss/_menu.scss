@@ -1,17 +1,110 @@
 .menu {
-	height: 100vh;
+	// height: 100%;
 	scroll-snap-align: start;
 	padding-top: 2rem;
 	background-color: #f8f8f8;
 	overflow: hidden;
+	// padding-bottom: 4rem;
 	.grid {
 		height: 100%;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr;
 		padding: 0 8rem;
+		position: relative;
+		.title {
+			margin-top: 2rem;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.title-text {
+				position: relative;
+				z-index: 1;
+				h1 {
+					color: #333;
+					font-size: 4rem;
+					line-height: 3.2rem;
+					z-index: 99;
+				}
+
+				div {
+					position: absolute;
+					z-index: 1;
+					opacity: 0.8;
+					background-color: #ffdac9;
+					height: 6px;
+
+					width: 120%;
+					left: -20px;
+					top: 10px;
+				}
+			}
+			button {
+				all: unset;
+				padding: 0.5rem 1rem;
+				margin-top: 1rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				background-color: #ffdac9;
+			}
+		}
 		.grid-column {
-			padding: 2rem;
+			border-right: 1px solid #c0bfbf;
+			.grid-content {
+				padding-top: 12rem;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				gap: 3rem;
+				margin-bottom: 4rem;
+				overflow: hidden;
+				h1 {
+					position: relative;
+					color: #333;
+					font-size: 4rem;
+					line-height: 3.2rem;
+				}
+				h1#main {
+					margin-top: 4rem;
+					left: -10px;
+				}
+				h1#sides {
+					margin-top: 4rem;
+					left: -10px;
+				}
+				h1#desserts {
+					margin-top: 2rem;
+					left: -8px;
+				}
+				.menu-item {
+					margin-left: 2rem;
+					display: flex;
+					flex-direction: column;
+					// gap: 1rem;
+
+					p {
+						margin: unset;
+						color: #767676;
+						font-family: Lato, sans-serif;
+						line-height: 1.4rem;
+						font-weight: 500;
+						width: 20ch;
+					}
+					.price {
+						margin-top: 1rem;
+						border: #ffdac9 2px solid;
+						width: 40px;
+						text-align: right;
+					}
+				}
+			}
 		}
 	}
 }
