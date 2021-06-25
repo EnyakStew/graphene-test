@@ -54,7 +54,9 @@ const Community = () => {
 					<div className="item-left">
 						{' '}
 						<img src={Waffles} alt="waffles" />
-						<div className="icon"></div>
+						<div className="icon">
+							<img src={Instagram} alt="instagram" />
+						</div>
 					</div>
 					<div className="item-right">
 						<h4>@buzzfeedfood</h4>
@@ -85,7 +87,9 @@ const Community = () => {
 					<div className="item-left">
 						{' '}
 						<img src={Tacos} alt="tacos" />
-						<div className="icon"></div>
+						<div className="icon">
+							<img src={Instagram} alt="instagram" />
+						</div>
 					</div>
 					<div className="item-right">
 						<h4>@buzzfeedfood</h4>

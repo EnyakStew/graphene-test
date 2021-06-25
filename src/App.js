@@ -21,8 +21,9 @@ function App() {
 				<DetectSection>
 					<Community />
 				</DetectSection>
-
-				{/* <Menu /> */}
+				<DetectSection>
+					<Menu />
+				</DetectSection>
 			</ReactScrollDetect>
 		</div>
 	);

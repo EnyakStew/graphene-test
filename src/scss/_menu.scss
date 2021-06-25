@@ -1,0 +1,16 @@
+.menu {
+	height: 100vh;
+	scroll-snap-align: start;
+	padding-top: 4rem;
+	background-color: #f8f8f8;
+	.grid {
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+		padding: 0 8rem;
+		.grid-column {
+			padding: 2rem;
+		}
+	}
+}
